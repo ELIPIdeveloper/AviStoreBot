@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Call Cloudflare Worker
-        run: curl -sf "https://avistorebot.hhlvc15j8-k0vrqo7b.workers.dev/test"
+        run: curl -sf "https://avistorebot.hhlvc15j8-k0vrqo7b.workers.dev"
