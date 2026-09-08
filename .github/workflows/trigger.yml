@@ -1,0 +1,13 @@
+name: Trigger AviStore Worker
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+
+jobs:
+  call-worker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Cloudflare Worker
+        run: curl -sf "https://avistorebot.hhlvc15j8-k0vrqo7b.workers.dev"
